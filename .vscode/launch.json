@@ -1,0 +1,22 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Scrapy Debug",
+      "type": "debugpy",
+      "request": "launch",
+      "module": "scrapy",
+      "args": [
+        "crawl",
+        "cars", // Replace with the name of your spider
+        "-o",
+        "debug_output.json" // Optional: Save output to a file for debugging
+      ],
+      "console": "integratedTerminal",
+      "justMyCode": false,
+      "env": {
+        "SCRAPY_SETTINGS_MODULE": "sawari.settings"
+      }
+    }
+  ]
+}
